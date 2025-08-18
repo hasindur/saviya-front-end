@@ -76,11 +76,7 @@ export const careHomes = [
 const Organization = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedCategory, setSelectedCategory] = useState('All types');
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        amount: ''
-    });
+
     const categories = ['All types', 'Elder Care', 'Children Care', 'Animal Care', 'Others'];
 
     const filteredHomes = careHomes.filter(home => {

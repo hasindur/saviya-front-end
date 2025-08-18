@@ -21,6 +21,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/organization" element={<Organization />} />
           <Route path="/payment" element={<PaymentPage />} />
+          <Route path="/carehome/:id" element={<CareHomeDetail />} />
         </Routes>
       </div>
     </BrowserRouter>
