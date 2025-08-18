@@ -87,7 +87,7 @@ const AboutSection = () => {
                         </div>
                         <div className="md:w-1/2">
                             <img
-                                src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                                src="https://images.pexels.com/photos/7492989/pexels-photo-7492989.jpeg"
                                 alt="Rescued animals receiving care and love"
                                 className="w-full rounded-xl shadow-lg object-cover h-64"
                             />
@@ -105,7 +105,7 @@ const AboutSection = () => {
                         </div>
                         <div className="md:w-1/2">
                             <img
-                                src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                                src="https://images.pexels.com/photos/7474858/pexels-photo-7474858.jpeg"
                                 alt="Elderly people enjoying care and companionship"
                                 className="w-full rounded-xl shadow-lg object-cover h-64"
                             />
