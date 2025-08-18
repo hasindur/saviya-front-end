@@ -44,16 +44,17 @@ const Navbar = () => {
                     <div className="flex items-center gap-3">
                         <Link
                             to="/signin"
-                            className="px-5 py-1.5 bg-gradient-to-r from-purple-600 to-purple-800 text-white rounded-full font-semibold shadow-sm hover:shadow-md transition-all duration-300 no-underline"
+                            className="px-5 py-1.5 bg-purple-400 text-white rounded-full font-semibold shadow-md hover:bg-yellow-400 hover:scale-101 transition-transform duration-300 no-underline"
                         >
                             Sign In
                         </Link>
                         <Link
                             to="/signup"
-                            className="px-5 py-1.5 bg-gradient-to-r from-yellow-400 to-yellow-300 text-purple-800 rounded-full font-semibold shadow-sm hover:shadow-md transition-all duration-300 no-underline"
+                            className="px-5 py-1.5 bg-purple-400 text-white rounded-full font-semibold shadow-md hover:bg-yellow-400 hover:scale-101 transition-transform duration-300 no-underline"
                         >
                             Sign Up
                         </Link>
+
                     </div>
                 </div>
 
