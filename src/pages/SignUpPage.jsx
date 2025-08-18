@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Footer from "../components/Footer";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const SignUpPage = () => {
   const [formData, setFormData] = useState({
@@ -23,18 +25,19 @@ const SignUpPage = () => {
     setFormData({ ...formData, role });
   };
 
-  const handleSubmit = (e) => {
+
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!formData.agreed) {
-      alert("Please agree to the Terms and Privacy Policy.");
-      return;
+    if (!formData.agreed) { alert("Please agree"); return; }
+    if (formData.password !== formData.confirmPassword) { alert("Passwords do not match"); return; }
+
+    try {
+      const res = await axios.post("http://localhost:5000/api/auth/signup", formData);
+      alert("Account created successfully!");
+    } catch (err) {
+      alert("Signup failed: " + err.response?.data?.message || err.message);
     }
-    if (formData.password !== formData.confirmPassword) {
-      alert("Passwords do not match.");
-      return;
-    }
-    alert(`Account created for ${formData.fullName} as ${formData.role} (mock)`);
-    console.log("Form Data:", formData);
   };
 
   const isBeneficiary = formData.role === "Beneficiary";

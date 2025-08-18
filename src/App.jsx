@@ -7,7 +7,9 @@ import About from './pages/About';
 import Navbar from './components/Navbar';
 import Organization from './pages/Organization';
 import CareHomeDetail from './pages/CareHomeDetail';
-import PaymentPage from './pages/Payment'; // <-- import new page
+import PaymentPage from './pages/Payment';
+import AdminPage from './pages/AdminPage';
+
 
 function App() {
   return (
@@ -22,6 +24,9 @@ function App() {
           <Route path="/organization" element={<Organization />} />
           <Route path="/payment" element={<PaymentPage />} />
           <Route path="/carehome/:id" element={<CareHomeDetail />} />
+          <Route path="/admin/*" element={<AdminPage />} />
+          <Route path="/*" element={<h1 className="text-4xl font-bold  bg-red-500 text-center mt-20">404 - Page Not Found</h1>} />
+
         </Routes>
       </div>
     </BrowserRouter>
