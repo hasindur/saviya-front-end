@@ -13,8 +13,7 @@ export const careHomes = [
         description: "A loving home for 24 children aged 6-17 years old offering childcare, education and care.",
         image: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=300&h=200&fit=crop",
         needs: ["Money", "Volunteers", "Books", "Beds", "School Supplies"],
-        status: "Available",
-        statusColor: "success"
+
     },
     {
         id: 2,
@@ -24,8 +23,7 @@ export const careHomes = [
         description: "Providing nursing and dignity to 45 elderly residents with 24/7 medical care.",
         image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=300&h=200&fit=crop",
         needs: ["Money", "Medical Supplies", "Volunteers", "Wheelchairs"],
-        status: "Available",
-        statusColor: "success"
+
     },
     {
         id: 3,
@@ -35,8 +33,7 @@ export const careHomes = [
         description: "A safe haven for 32 children in need with education and healthcare services.",
         image: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=300&h=200&fit=crop",
         needs: ["Money", "Toys", "Library Books", "Computers", "Uniforms"],
-        status: "Available",
-        statusColor: "primary"
+
     },
     {
         id: 4,
@@ -46,8 +43,7 @@ export const careHomes = [
         description: "A safe haven for abandoned and rescued animals providing medical care, shelter and rehabilitation.",
         image: "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=300&h=200&fit=crop",
         needs: ["Money", "Volunteers", "Cages", "Pet Food", "Medical Supplies"],
-        status: "Available",
-        statusColor: "info"
+
     },
     {
         id: 5,
@@ -57,8 +53,7 @@ export const careHomes = [
         description: "Supporting 45 children with housing, education, and life skills training for a better future.",
         image: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=300&h=200&fit=crop",
         needs: ["Money", "Volunteers", "Computers", "Sports Equipment", "Beds"],
-        status: "Available",
-        statusColor: "success"
+
     },
     {
         id: 6,
@@ -68,8 +63,7 @@ export const careHomes = [
         description: "Providing various community services including food distribution, job training and social support.",
         image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=300&h=200&fit=crop",
         needs: ["Money", "Volunteers", "Food Items", "Training Materials"],
-        status: "Available",
-        statusColor: "secondary"
+
     },
 ];
 
@@ -98,15 +92,7 @@ const Organization = () => {
                 {/* Hero Section */}
 
                 <section className="hero-section min-h-[400px] flex items-center justify-center text-purple-700 bg-purple-100 relative px-4 md:px-0 pt-10 mx-5 md:mx-0 rounded-3xl">
-                    {/* Background Layer
-                    <div
-                        className="absolute inset-0 bg-no-repeat opacity-60 rounded-3xl"
-                        style={{
-                            backgroundImage: `url(${BgImg})`,
-                            backgroundSize: "cover",
-                            backgroundPosition: "center",
-                        }}
-                    ></div> */}
+
 
                     <div className="max-w-3xl text-center">
                         <h1 className="text-4xl md:text-5xl font-bold mb-4">Discover Care Homes</h1>
@@ -121,7 +107,7 @@ const Organization = () => {
                                 placeholder="Search for care homes..."
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
-                                className="flex-1 px-6 py-3 text-gray-700 outline-none focus:ring-2 focus:ring-purple-400 rounded-l-full"
+                                className="flex-1 px-6 py-3 text-gray-700 outline-none focus:ring-2 rounded-l-full"
                             />
                             <button
                                 className="px-6 py-3 bg-purple-700 text-white font-semibold rounded-r-full hover:bg-purple-800 transition-colors flex items-center justify-center gap-2"
@@ -172,9 +158,7 @@ const Organization = () => {
                                                 alt={home.name}
                                                 style={{ height: '200px', objectFit: 'cover' }}
                                             />
-                                            <span className={`badge bg-${home.statusColor} position-absolute top-0 end-0 m-3`}>
-                                                {home.status}
-                                            </span>
+
                                         </div>
                                         <div className="card-body d-flex flex-column p-4">
                                             <div className="d-flex justify-content-between align-items-start mb-2">
